@@ -8,7 +8,11 @@ function App() {
     <div className="App">
         <h3>Sodalyt</h3>
         <Switch>
-          <Route exact path='/test' render={() => (<div>this is a test page</div>)} />
+          <Route path='/test' render={() => { return (
+            <div>
+              <p>This is a test page</p>
+            </div>
+          )}} />
         </Switch>
     </div>
   );
