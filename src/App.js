@@ -8,7 +8,14 @@ const testURL = 'https://61msatt1jf.execute-api.us-east-2.amazonaws.com/Beta'
 let dataSet = []
 
 async function fetchData(){
-  fetch(testURL)
+  fetch(testURL, {
+    method: 'GET',
+    header: {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "Authorization": ""
+    }
+  })
   .then(r => r.json()
   .then(data => {
     dataSet = [...data]
