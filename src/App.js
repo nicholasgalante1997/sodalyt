@@ -5,16 +5,19 @@ import { Switch, Route } from 'react-router-dom'
 
 const testURL = 'https://61msatt1jf.execute-api.us-east-2.amazonaws.com/Beta'
 
+let dataSet = []
+
 async function fetchData(){
   fetch(testURL)
   .then(r => r.json()
   .then(data => {
-    console.log(data)
+    dataSet = [...data]
   }))
 }
 
 function App() {
   fetchData()
+  console.log(dataSet)
   return (
     <div className="App">
         <h3>Sodalyt</h3>
