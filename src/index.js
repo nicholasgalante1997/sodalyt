@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import Amplify, { API } from 'aws-amplify';
-import config from './aws-exports'
+
 Amplify.configure({
   API: {
     endpoints: [
