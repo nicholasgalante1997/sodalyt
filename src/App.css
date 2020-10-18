@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +32,13 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+
+
+

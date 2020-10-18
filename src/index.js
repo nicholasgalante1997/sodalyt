@@ -6,17 +6,6 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import Amplify, { API } from 'aws-amplify';
 
-Amplify.configure({
-  API: {
-    endpoints: [
-      {
-        name: 'test-sodalyt',
-        endpoint: 'https://61msatt1jf.execute-api.us-east-2.amazonaws.com/Beta'
-      }
-    ]
-  }
-})
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
