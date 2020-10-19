@@ -15,7 +15,7 @@ const LandingContainer = (props) => {
     console.log(props)
 
     const pushToNewUserSignIn = () => {
-        props.history.push('/test')
+        props.history.push('/c/new')
     }
 
     return ( 

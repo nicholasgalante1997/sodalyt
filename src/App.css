@@ -81,3 +81,14 @@
   max-width: 300px;
   width: 300px;
 }
+
+.story-card {
+ color: blue;
+ display: space-evenly;
+ padding: 3px;
+}
+
+.story-image {
+  height: 210px;
+  width: 200;
+}

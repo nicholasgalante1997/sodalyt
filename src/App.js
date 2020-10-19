@@ -7,6 +7,8 @@ import 'react-slideshow-image/dist/styles.css'
 import LandingPage from './components/Landing/LandingPage'
 import NewUserCustomerForm from './components/Auth/NewCustomerUserForm'
 import SlideShow from './components/Landing/SlideShow'
+import StoryCardContainer from './components/Story/StoryCardContainer'
+
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -18,7 +20,9 @@ function App() {
           {/* Landing Page */}
           <Route exact path='/' component={LandingPage} />
           {/* New User Sign Up */}
-          <Route exact path='/test' component={NewUserCustomerForm} />
+          <Route exact path='/c/new' component={NewUserCustomerForm} />
+          {/* Story Card Container */}
+          <Route exact path='/storycards' component={StoryCardContainer} />
           {/* Test Slideshow Route */}
           {/* <Route exact path='/slideshow' component={SlideShow} /> */}
         </Switch>

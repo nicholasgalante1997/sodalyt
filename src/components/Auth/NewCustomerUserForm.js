@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
 
 class NewUserCustomerForm extends Component {
     state = { 
@@ -17,12 +18,17 @@ class NewUserCustomerForm extends Component {
         })
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.props.history.push('/storycards')
+    }
+
     render() { 
-        console.log(this.state)
+        console.log(this.state, this.props)
         return ( 
             <div style={{color: 'black'}}>
                 <p>New User Sign Up Page</p>
-                <Form className='new-user-sign-up-form'>
+                <Form className='new-user-sign-up-form' onSubmit={this.handleSubmit}>
                     <Form.Group>
                         <Form.Label>Email: </Form.Label>
                         <input name='email'
@@ -60,6 +66,9 @@ class NewUserCustomerForm extends Component {
                             <option>Prefer Not to Say</option>
                         </Form.Control>
                     </Form.Group>
+                    <Button variant='primary' type='submit'>
+                        Submit
+                    </Button>
                 </Form>
             </div>
          );
