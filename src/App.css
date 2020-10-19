@@ -39,6 +39,40 @@
   color: black;
 }
 
+.landing-col-left {
+  padding-top: 2%;
+}
 
+.landing-col-right {
+  padding-top: 100px;
+  text-align: center;
+}
 
+.landing-header-strong {
+  display: block;
+}
 
+.logo-img {
+  max-width: 200px;
+  max-height: fit-content;
+}
+
+.landing-slide {
+  height: 200px;
+  width: 200px;
+}
+
+.tag-line {
+  color: blue;
+}
+
+.landing-slide-show {
+  padding-left: 180px;
+  padding-top: 25px;
+}
+
+.landing-portal-card {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
+  text-align: center;
+}
