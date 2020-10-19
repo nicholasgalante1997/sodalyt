@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom'
 import StoryCard from './StoryCard'
 
 import Atlantis from './StoryCardIcons/city.png'
@@ -37,7 +38,7 @@ const StoryCardContainer = (props) => {
     Pick a choose your own adventure story below while we craft a personality type for you :)   
     It wont take more than two minutes, scout's honor.
     `
-
+    console.log(selectedStory, "In the Story Card Container")
     return ( 
         <div>
             <Container>
@@ -49,8 +50,13 @@ const StoryCardContainer = (props) => {
                     {storyCollection.map(story => (<StoryCard 
                     story={story} 
                     id={story.id} 
+                    handleStorySelect={handleStorySelect}
                     />))}
                 </Row>
+            <Link to={{
+                pathname: '/stories/alt',
+                state: {stateTest: "Im passing this object through React Router Dom"}
+            }}>Alternate</Link>
             </Container>
         </div>
      );

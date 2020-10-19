@@ -14,7 +14,7 @@ const StoryCard = (props) => {
                     <Card.Title>{props.story.storyName}</Card.Title>
                 </Card.Header>
                 <Card.Footer>
-                    <Button variant='primary'>Choose Me!</Button>
+                    <Button variant='primary' onClick={() => props.handleStorySelect(props.id)}>Choose Me!</Button>
                 </Card.Footer>
             </Card>
         </div>

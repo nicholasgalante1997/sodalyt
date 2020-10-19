@@ -8,6 +8,7 @@ import LandingPage from './components/Landing/LandingPage'
 import NewUserCustomerForm from './components/Auth/NewCustomerUserForm'
 import SlideShow from './components/Landing/SlideShow'
 import StoryCardContainer from './components/Story/StoryCardContainer'
+import StoryAltPage from './components/Story/StoryAltPage'
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -23,6 +24,8 @@ function App() {
           <Route exact path='/c/new' component={NewUserCustomerForm} />
           {/* Story Card Container */}
           <Route exact path='/storycards' component={StoryCardContainer} />
+          {/* Alternate Story Route */}
+          <Route exact path='/stories/alt' component={StoryAltPage} />
           {/* Test Slideshow Route */}
           {/* <Route exact path='/slideshow' component={SlideShow} /> */}
         </Switch>
