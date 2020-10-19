@@ -12,10 +12,22 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 const storyCollection = [
-    {storyName: "Mission: Colonize Mars", thumbnailURL: Mars, desc: "", id: 1},
-    {storyName: "Discovering Atlantis", thumbnailURL: Atlantis, desc: "", id: 2},
-    {storyName: "Vegas; Last Call", thumbnailURL: Vegas, desc: "", id: 3},
-    {storyName: "Weekend Getaway", thumbnailURL: Lake, desc: "",  id: 4},
+    {storyName: "Mission: Colonize Mars", 
+    thumbnailURL: Mars, 
+    desc: "You and the other pioneers on the maiden voyage of the Odyssey-241 have just touched down on the surface of mars, when your power supply suddenly fails!", 
+    id: 1},
+    {storyName: "Discovering Atlantis", 
+    thumbnailURL: Atlantis, 
+    desc: "On a discovery mission to study biomarine life near the ocean floor, you and your crew members discover what appears to be the lost City of Atlantis!", 
+    id: 2},
+    {storyName: "Vegas; Last Call", 
+    thumbnailURL: Vegas, 
+    desc: "You were nobody, a math teacher maybe, others say a real estate agent. Doesn't really matter, because you've just won the 26.2 million dollar Jackpot at the Bellagio, and now all of Vegas is yours.", 
+    id: 3},
+    {storyName: "Everest Adventure", 
+    thumbnailURL: Lake, 
+    desc: "This is it. The adventure you've been preparing for all of your life. Your bag is packed, your sherpa selected. It's time for Everest.",  
+    id: 4},
 ]
 
 const StoryCardContainer = (props) => {
@@ -41,13 +53,14 @@ const StoryCardContainer = (props) => {
     console.log(selectedStory, "In the Story Card Container")
     return ( 
         <div>
-            <Container>
+            <Container className='story-card-container'>
                 <h4>Story Cards</h4>
                 <Row>
                     <p>{STORYGREETING}</p>
                 </Row>
                 <Row>
                     {storyCollection.map(story => (<StoryCard 
+                    key={story.id}
                     story={story} 
                     id={story.id} 
                     handleStorySelect={handleStorySelect}
@@ -56,7 +69,7 @@ const StoryCardContainer = (props) => {
             <Link to={{
                 pathname: '/stories/alt',
                 state: {stateTest: "Im passing this object through React Router Dom"}
-            }}>Alternate</Link>
+            }}>Not a fan of the choose your own adventure format? No worries. Take this quick survey and we'll handle the rest.</Link>
             </Container>
         </div>
      );

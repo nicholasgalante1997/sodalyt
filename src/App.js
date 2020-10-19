@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-slideshow-image/dist/styles.css'
 
 import LandingPage from './components/Landing/LandingPage'
 import NewUserCustomerForm from './components/Auth/NewCustomerUserForm'
-import SlideShow from './components/Landing/SlideShow'
 import StoryCardContainer from './components/Story/StoryCardContainer'
 import StoryAltPage from './components/Story/StoryAltPage'
 

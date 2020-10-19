@@ -33,12 +33,16 @@
   }
 }
 
+/* Custom Styles */
+
+/* Whole Application Level; */
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
+/* Landing Page */
 .landing-col-left {
   padding-top: 2%;
 }
@@ -72,8 +76,6 @@
 }
 
 .landing-portal-card {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-  color: white;
   text-align: center;
 }
 
@@ -86,9 +88,22 @@
  color: blue;
  display: space-evenly;
  padding: 3px;
+ max-width: 220px;
 }
 
 .story-image {
   height: 210px;
   width: 200;
+}
+
+.story-card-container {
+  padding-top: 25px;
+}
+
+.standard-text {
+  color: black;
+}
+
+.landing-card-right-button {
+  padding-left: 50px;
 }

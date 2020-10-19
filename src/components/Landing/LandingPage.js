@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 const MissionStatement = `
 Our Mission is to make the customer to professional relationships more meaningful. We do this through AI powered matching, finding you the right professional based on your need, and more importantly your personality.
@@ -74,8 +75,13 @@ const LandingContainer = (props) => {
                          <Row>
                              Don't Have One of Those ^ Accounts? No Problem! Select a button below to get started!
                          </Row>
-                         <Row>
-                             <button onClick={pushToNewUserSignIn}>New Customer User</button>
+                         <Row className='landing-button-holder'>
+                             <div>
+                             <Button className='landing-card-left-button' variant='primary' onClick={pushToNewUserSignIn}>Looking for a Service?</Button>
+                             </div>
+                             <div> 
+                             <Button className='landing-card-right-button' variant='primary'>Listing a Service?</Button>
+                             </div>
                          </Row>
                      </Card.Body>
                    </Card>
