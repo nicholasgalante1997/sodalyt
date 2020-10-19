@@ -76,3 +76,8 @@
   color: white;
   text-align: center;
 }
+
+.form-gender-select {
+  max-width: 300px;
+  width: 300px;
+}

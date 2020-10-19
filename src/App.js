@@ -17,6 +17,7 @@ function App() {
         <Switch>
           {/* Landing Page */}
           <Route exact path='/' component={LandingPage} />
+          {/* New User Sign Up */}
           <Route exact path='/test' component={NewUserCustomerForm} />
           {/* Test Slideshow Route */}
           {/* <Route exact path='/slideshow' component={SlideShow} /> */}
